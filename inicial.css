@@ -1,0 +1,212 @@
+body{
+    background-color:rgb(34, 34, 34);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    max-width: 1200px;
+    margin:  0 auto;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div h4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+   flex-direction: column;
+    line-height:10px ;
+}
+li{
+    display:inline-block;
+    margin: 20px;
+}
+a{
+    color: white;
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 2px;
+}
+a:hover{
+    color: rgb(0, 140, 0);
+    transition: 0.3s all;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-weight: 200;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    background-image: linear-gradient(to right, rgb(0, 140, 0), rgb(0, 220, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 5000px;
+    line-height:20px ;
+}
+img{
+    width: 580px;
+    border-radius: 30px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 70%;  
+}
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    color: white;
+    background-image: linear-gradient(to right, rgb(0, 140, 0), rgb(0, 220, 0));
+    font-weight: bold;
+
+    padding-bottom: 10px;
+
+}
+form [type="submit"]:hover{
+   cursor: pointer;}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+}
+
+select {
+
+    display: flex;
+    flex-direction: column;
+    width: 70%; 
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+}
+
+#id{
+   border: 2px solid rgb(0, 140, 0);
+   padding: 10px;
+   border-radius: 15px;
+}
+#id:hover{
+    background-color: rgb(0, 140, 0);
+    color: white;
+}
+footer{
+    padding-top: 50px;
+}
+
+table {
+align-items: center;
+}
+
+tr:nth-child(even) {
+background-color: lightgray ;
+}
+
+tr:hover{
+background-color: #363636 ;
+color: white;
+}
+
+.ul {
+    margin-top: 20px;
+    height: 20px;
+    padding-right: 100px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+}
+
+section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid rgb(60, 60, 60);
+}
+
+th {
+    background-color: rgb(34, 34, 34);
+    color: rgb(0, 220, 0);
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(40, 40, 40);
+}
+
+tr:hover {
+    background-color: rgb(0, 140, 0);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#servicos {
+    display: flex;
+    justify-content: center; /* Centralizamos as listas horizontalmente */
+    align-items: center; /* Centralizamos as listas verticalmente */
+    gap: 20px;
+}
+
+#servicos h3{
+    color: rgb(0, 140, 0);
+    font-size: 30px;
+}
+
+#quemsomos img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    object-fit: cover;
+}

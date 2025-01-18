@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="inicial.css">
+    <title>WebAdvice</title>
+    
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Projeto </h1>
+            <h2>WebAdvice</h2>
+        </div>
+        <ul>
+            <a href="#servicos" ><li>Serviços</li></a>
+            <a href="#quemsomos" ><li>Quem Somos</li></a>
+            <a href="#listaespera" ><li>Lista de Espera</li></a>
+            <a href="consulta.jsp" id="id"><li>Consultar dados</li></a>
+        </ul>
+    </header>
+
+
+    <main>
+        <div id="inicio"></div>
+        <aside>
+            <h2><span>Mentoria e soluções</span></h2>
+            <h2>para tech</h2>
+            <p>A Webadvice oferece mentoria e consultoria especializada em tecnologia, 
+                ajudando empresas e profissionais a otimizar processos e implementar soluções digitais inovadoras.</p>
+           
+
+            <!-- IMPORTANTE !-->
+            <form name="form1" method="post" action="salvar.jsp" onsubmit="return verificar();">
+                <input type="text" name="txtNome" placeholder="Nome">
+                <input type="email" name="txtEmail" placeholder="E-mail">
+                <input type="text" name="txtNumero" placeholder="11 9 9999-9999">
+
+
+                <!-- <input type="text" name="txtServico" placeholder="Serviços"> -->
+
+
+                <input type="text" name="txtServico" id="txtServico" placeholder="Digite ou escolha um serviço" list="servicos" required>
+                <datalist id="servicos">
+                <option value="Mentoria">
+                <option value="Consultoria">
+                </datalist><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+
+        </aside>
+        <article>
+            <br><br><br>
+            <img src="img/mentoriaimg-removebg.png" alt="mentoria" >
+        </article>
+    </main>
+
+    <section>
+        <h2><span>Serviços</span></h2>
+        <div id="servicos">
+        
+        <ul>
+            <h3><strong>Mentoria</strong></h3> 
+
+            <li>Qual área seguir?</li><br>
+            <li>Orientações de Softskills</li><br>
+            <li>Orientações de Hardskills</li><br>
+            <li>Algoritmo do Linkedin</li><br>
+            <li>Planejamento de Carreira</li><br>
+        </ul>
+        
+        <br><br>
+
+        <ul>
+            <h3><strong>Consultoria</strong></h3>
+
+            <li>Avaliação e Otimização de TI</li><br>
+            <li>Implementação de Sistemas e Tecnologias</li><br>
+            <li>Planejamento e Gestão de Projetos de TI</li><br>
+            <li>Desenvolvimento Web</li><br>
+        </ul>
+        </div>
+    </section>
+
+    <section text align="center">
+
+        <div id="quemsomos">
+        <h2><span>Quem Somos?</span></h2>
+        <ul>
+            <li><img src="img/cristhian-foto.JPG" alt="Cristhian" ><br>Cristhian<br><br>
+            <a href="https://w.app/WebAdviceCris" id="id" target="_blank">Falar com o Cris</a></li>
+
+            <li><img src="img/kaua-foto.jpg" alt="Kauã" ><br>Kauã<br><br>
+            <a href="https://w.app/WebAdviceKaua" id="id" target="_blank">Quero falar com o Kauã</a></li>
+
+            <li><img src="img/iago-foto.jpg" alt="Iago" ><br>Iago<br><br>
+            <a href="https://w.app/WebAdviceIago" id="id" target="_blank">Acho que o Iago é o melhor sócio</a></li><br>
+
+        </ul>
+
+        </div>
+    </section>
+
+    <section text align="right">
+
+        <div id="listaespera"></div>
+        <h2><span>Lista de Espera</span></h2>
+        <h3>Faça o cadastro e aguarde o contato do time</h3><br>
+        <a href="#inicio" id="id">Quero entrar na lista de espera agora!</a>
+
+    </section>
+
+    <footer>
+        <h2 text align="center">Projeto WebAdvice</h2> 
+        <h4 text align="center"> Todos os direitos reservados 2024 </h4>
+        <h5 text align="center">Cristhian Silva | Iago Monteiro | Kauã Almeida</h5>
+    </footer>
+</body>
+</html>
